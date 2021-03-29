@@ -27,9 +27,9 @@ class ModelController extends AbstractController
 
         $models = $dm->getRepository(Model::class)->findBy(['category' => $category]);
 
-        return new JsonResponse([
-            'data'=> $serializer->normalize($models, 'json')
-        ]);
+        return new JsonResponse(
+            $serializer->normalize($models, 'json')
+		);
     }
 }
 

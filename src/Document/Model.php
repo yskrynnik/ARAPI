@@ -28,7 +28,7 @@ class Model
     /**
      * @MongoDB\Field(type="string")
      */
-    protected $arModel;
+    protected $model;
 
     /**
      * @MongoDB\Field(type="string")
@@ -62,9 +62,9 @@ class Model
     /**
      * @return mixed
      */
-    public function getArModel()
+    public function getModel()
     {
-        return $this->arModel;
+        return $this->model;
     }
 
     /**
@@ -100,11 +100,11 @@ class Model
     }
 
     /**
-     * @param mixed $arModel
+     * @param mixed $model
      */
-    public function setArModel($arModel)
+    public function setArModel($model)
     {
-        $this->arModel = $arModel;
+        $this->model = $model;
     }
 
     /**
